@@ -1,0 +1,151 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+        <title> Forum </title>
+        <script src="jquery.min.js"></script>
+		<script src="JavaScript/general.js"></script>
+		<script src="JavaScript/pocetnaStranica.js"></script> 
+		
+
+        
+    </head>
+    
+    <body>
+       
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="pocetnaStranica.html">Forum</a>
+              
+              <a class="navbar-brand" href="promenaTipaKorisnika.html"> Promena tipa korisnika</a>
+              <a class="navbar-brand" href="korisnickaStranica.html"> My Profile</a>
+              <a class="navbar-brand" href="posaljiPoruku.html"> Send message</a>
+              <a class="navbar-brand" href="pocetnaStranicaUser.html"> Home(user)</a>
+              <a class="navbar-brand" href="sviKorisnici.html"> All users</a>
+              
+              <a class="navbar-brand" href="preporukaTema.html"> Preporuka tema</a>
+            </div>
+            <ul class="nav navbar-nav"> 
+              <li></li>
+              
+              
+              
+            </ul>
+              
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+             </ul>
+          </div>
+        </nav>
+       
+        
+        <div class="container-fluid" id="subForums"  >
+            <div class="row" id="subForums1">
+                <div class="col-md-12" id="subForums2">
+                    <div class="panel panel-primary" id="subForums3">
+                        <div class="panel-heading" id="subForums4">
+                            <div class="panel-title pull-left" id="subForums5Slika">
+                                 <img src="confirm.jpg" class="img-rounded" alt="ALT" width="32" height="32"> 
+                                 Naziv podforuma
+                                
+                                
+                                
+                            </div>
+                            <div class="panel-title pull-right" id="subForum6OdgovorniModerator"><small>Odgovorni moderator</small></div>
+                            <div class="clearfix" id="subForums7"></div>
+                        </div>
+                        <div class="panel-body" id="subForums8Opis">Opis podforuma</div>
+                        <div class="panel-footer " id="subForums9"> 
+                            <div class = "row" id="subForums10">
+                                <div class = "col-sm-6" id="subForums11Pravilo">
+                                    <div class="dropdown " id="subForums14">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Moderatori
+                                        <span class ="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            
+                                        </ul>
+                             
+                                    </div>
+                                	
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            
+                                
+                             
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id = "kreirajPodrofumLink" href = "#" onclick="addSubForumPage()"> <span class="glyphicon glyphicon-plus"></span> Add SubForum  </a> <br>
+        <hr style="height:7px;border:none;color:#333;background-color:#333;">
+        <div class="container-fluid ">
+        <div class="row">
+                <div class="col-md-12">
+                        <div class="panel panel-danger">
+                                <div class="panel-heading ">
+                                    <h1 class="panel-title text-center"><b>Pretraga podforuma</b></h1>
+                                </div>
+                                <div class="panel-body">
+                                            <form accept-charset="UTF-8" id="formaZaPretragu">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label>Naslov</label>
+                                                        <input class="form-control" placeholder="Naslov podforuma" id="name" type="text">
+                                                    </div>
+                                                     <div class="form-group">
+                                                         <label>Opis</label>
+                                                        <input class="form-control" placeholder="Opis podforuma" id="description" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <label>Odgovorni moderator</label>
+                                                        <input class="form-control" placeholder="Odgovorni moderator podforuma" id="mainModerator" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Odaberite po cemu vrsite pretragu:</label> <br>
+                                                        <label><input  type="checkbox" id="pretragaPoNaslovu"> Po naslovu podforuma </label> <br>
+                                                        <label><input  type="checkbox" id="pretragaPoOpisu"> Po opisu podforuma </label> <br>
+                                                        <label><input  type="checkbox" id="pretragaPoModeratoru"> Po odgovornom moderatoru podforuma </label> <br>
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                     <input  class="btn btn-lg btn-danger btn-block" type="button" value="Search" onclick="pretrazi()">
+                                                </fieldset>
+                                            </form>
+                                   
+                                        
+                                    
+                                          
+                                </div>
+                        </div>
+                            
+                            
+                                       
+                                    
+                        </div>
+                    </div>
+            
+    </div>
+        
+        
+        
+        
+        
+
+
+
+        
+        
+		<script src="bootstrap/bootstrap.min.js"></script>        
+    </body>
+    
+</html>

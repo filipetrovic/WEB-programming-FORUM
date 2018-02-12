@@ -1,0 +1,156 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+        <title> Forum </title>
+		<script src="jquery.min.js"></script>
+		<script src="JavaScript/kreirajPodforum.js"></script>
+		<script src="JavaScript/general.js"></script>
+        
+    </head>
+    
+    <body>
+       
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="pocetnaStranica.html">Forum</a>
+              
+              <a class="navbar-brand" href="promenaTipaKorisnika.html"> Promena tipa korisnika</a>
+              <a class="navbar-brand" href="korisnickaStranica.html"> My Profile</a>
+              <a class="navbar-brand" href="posaljiPoruku.html"> Send message</a>
+              <a class="navbar-brand" href="pocetnaStranicaUser.html"> Home(user)</a>
+              <a class="navbar-brand" href="sviKorisnici.html"> All users</a>
+              <a class="navbar-brand" href="preporukaTema.html"> Preporuka tema</a>
+            </div>
+            <ul class="nav navbar-nav"> 
+              <li></li>
+              
+              
+              
+            </ul>
+              
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+             </ul>
+          </div>
+        </nav>
+        
+    
+        <div class="container-fluid pull-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 ">
+                <div class="panel panel-primary">
+                    <div class="panel-heading ">
+                        <h1 class="panel-title text-center"><b>Novi podforum</b></h1>
+                    </div>
+                    <div class="panel-body">
+                        <form  id="createSubForum" >
+                            
+                                
+                                
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Naziv" name="name" type="text" id="name">
+                                </div>
+                                
+                                 <div class="form-group">
+                                        <textarea id = "ta" class="form-control"  name="description" rows="5" placeholder="Opis podforuma" ></textarea>
+                                </div>
+                                
+                                <div class="form-group">    
+                                        
+                                     <input type="text" class="form-control" placeholder="Image path" name="image">
+                                </div>
+                                
+                                <div class="form-group">
+                                	<input type="text" class="form-control" placeholder="Pravilo" name="rules">
+                                </div>
+                                <!-- 
+                                 <div class="dropdown">
+                                    
+                                    <input class="" type="text" name="pravilo" placeholder="Enter rule">
+                                     <input class="btn  btn-primary" type="button" value="Add rule" onclick="getSingleRule()">
+                                     
+                                     
+                                     <button class="btn btn-success dropdown-toggle pull-right" type="button" data-toggle="dropdown">Lista pravila
+                                    
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul id="listaPravila" class="dropdown-menu pull-right">
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <br/>
+                                
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Lista moderatora
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">pravilo1</a></li>
+                                        <li><a href="#">pravilo2</a></li>
+                                        <li><a href="#">pravilo3</a></li>
+                                    </ul>
+                                    
+                                     <input class="btn  btn-primary" type="submit" value="Add moderator">
+                                    
+                                    
+                                </div>
+                                <div class="dropdown pull-right">
+                                    <button class="btn btn-success dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+                                        Moderatori podforuma
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">pravilo1</a></li>
+                                        <li><a href="#">pravilo2</a></li>
+                                        <li><a href="#">pravilo3</a></li>
+                                    </ul>
+                                </div>
+                                <br/>
+                                <br> -->
+                                Lista Moderatrora: 
+                                <select class="input-large" id="combobox">
+					                <option></option>
+					                
+          						</select>
+                                <button class="btn btn-primary dropdown-toggle pull-right" onclick="return addModerator()">Add</button>
+                                <br/>
+                                <br/>
+                                Lista izabranih odgovornih :<select id="listaIzabranih">
+                                	
+                                </select>
+                                
+                                <input class="btn btn-lg btn-primary btn-block" type="button" value="Create podforum" onclick="createSubForum()">
+                                
+                                
+                                
+                                
+                           
+                        </form>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+            
+       
+        
+        
+        
+
+
+
+        
+        
+		<script src="bootstrap/bootstrap.min.js"></script>        
+    </body>
+    
+</html>

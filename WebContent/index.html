@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Login or register</title>
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+		<script src="jquery.min.js"></script>
+		<script src="JavaScript/index.js"></script>
+		<script src="JavaScript/general.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+               <p>Forum</p>
+            </div>
+          </div>
+        </nav>
+        
+    <div class="container ">
+        
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading ">
+                            <h1 class="panel-title text-center"><b>Login</b></h1>
+                        </div>
+                        <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form" name = "login" id="login"  >
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Email" name="email" type="text">
+                                    </div>
+                                    <div class="form-group"> 
+                                        <input class="form-control" placeholder="Password" name="password" type="password" >
+                                    </div>
+                                    
+                                    <input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="logIn()" >
+                                </fieldset>
+                            </form>
+
+
+                        </div>
+                       
+
+                    </div class="panel panel-primary">
+                    	<div class="panel-heading ">
+                            <h1 class="panel-title text-center"><b>For guests</b></h1>
+                        </div>
+                        <div class="panel-body">
+                            <button class="btn btn-lg btn-primary btn-block" onclick="logInGuest()"> Log in as GUEST </button>
+
+                        </div>
+                    <div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading ">
+                        <h1 class="panel-title text-center"><b>Register</b></h1>
+                    </div>
+                    <div class="panel-body">
+                        <form  id = "registerForm" method="post" >
+                            <fieldset>
+                                <div class="form-group">
+                                    <input required = "true" class="form-control" placeholder="yourmail@example.com" id="email" type="text" name="email">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input  required = "true" class="form-control" placeholder="Username" id="username" type="text" name="username">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input required = "true" class="form-control" placeholder="Password" id="password" type="password" name="password">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Name" id="name" type="text" name="name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Surname" id="surname" type="text" name="surname">
+                                </div>
+                                
+                                
+                            
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Phone" id="phone" type="text" name="phone">
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                <input class="btn btn-lg btn-primary btn-block" type="button" value="Register" id="registerButton" onclick="registerUser()">
+                                
+                                
+                                
+                            </fieldset>
+                        </form>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+                
+            </div>
+    </div>
+        
+    
+        
+        
+        
+        
+        
+        <script src="bootstrap/bootstrap.min.js"></script>
+        
+		
+	</body>
+</html>

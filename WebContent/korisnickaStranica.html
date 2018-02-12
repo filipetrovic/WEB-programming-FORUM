@@ -1,0 +1,365 @@
+<html>
+    <head>
+    
+        
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+        <title> Forum </title>
+        <script src="jquery.min.js"></script>
+		<script src="JavaScript/general.js"></script>
+		<script src="JavaScript/korisnickaStranica.js"></script> 
+		
+
+        
+    </head>
+    
+    <body>
+       
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="pocetnaStranica.html">Forum</a>
+              
+              <a class="navbar-brand" href="promenaTipaKorisnika.html"> Promena tipa korisnika</a>
+              <a class="navbar-brand" href="korisnickaStranica.html"> My Profile</a>
+              <a class="navbar-brand" href="posaljiPoruku.html"> Send message</a>
+              <a class="navbar-brand" href="pocetnaStranicaUser.html"> Home(user)</a>
+              <a class="navbar-brand" href="sviKorisnici.html"> All users</a>
+              <a class="navbar-brand" href="preporukaTema.html"> Preporuka tema</a>
+            </div>
+            <ul class="nav navbar-nav"> 
+              <li></li>
+              
+              
+              
+            </ul>
+              
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+             </ul>
+          </div>
+        </nav>
+       
+        
+        <div class="container-fluid" id="subForums"  >
+                <div class="widget-header">
+					
+					<h2 id="korisnikovoIme">Korisnik : ovde treba ime</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Atribut</th>
+								<th>Vrednost</th>
+								
+							</tr>
+						</thead>
+						<tbody >
+							<tr >
+								<td >Username</td>
+								<td id="username">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td >Lozinka</td>
+								<td id="password">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td>Ime</td>
+								<td  id="name">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td>Prezime</td>
+								<td  id="surname">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td >Uloga</td>
+								<td id="role">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td >Kontakt telefon</td>
+								<td id="phone">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td >e-mail</td>
+								<td id="email">ovde ide username</td>
+								
+							</tr>
+                            <tr>
+								<td >Datum registracije</td>
+								<td id="date">ovde ide username</td>
+								
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+				<hr style="height:7px;border:none;color:#333;background-color:#333;">
+				
+				</div> <!-- /widget-content -->
+                <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="page-header">Zalbe</h2>
+                        <section class="comment-list" id="mestoZaZalbe">
+                          <!-- First Comment -->
+
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-body">
+                                  <header class="text-left">
+                                    <div class="comment-user"><i class="fa fa-user"></i> <label>Ovde ide sender</label></div>
+
+                                  </header>
+                                  <div class="comment-post">
+                                    <p>
+                                      Ovde ide sadrzaj
+                                    </p>
+                                  </div>
+
+                                </div>
+                              </div>
+                            
+
+
+
+                        </section>
+                    </div>
+                </div>
+                
+                <hr style="height:7px;border:none;color:#333;background-color:#333;">
+				
+				</div> <!-- /widget-content -->
+                <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="page-header">Poruke</h2>
+                        <section class="comment-list" id="mestoZaPoruke">
+                          <!-- First Comment -->
+
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-body">
+                                  <header class="text-left">
+                                    <div class="comment-user"><i class="fa fa-user"></i> <label>Ovde ide sender</label></div>
+
+                                  </header>
+                                  <div class="comment-post">
+                                    <p>
+                                      Ovde ide sadrzaj
+                                    </p>
+                                  </div>
+
+                                </div>
+                              </div>
+                            
+
+
+
+                        </section>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <hr style="height:7px;border:none;color:#333;background-color:#333;">
+            
+                <div class="widget-header">
+					
+					<h2 >Zapraceni podforumi</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Ime podforuma</th>
+								<th>Odgovorni moderator</th>
+								<th width = "80px"> </th>
+							</tr>
+						</thead>
+						<tbody id="zapraceniPodforumi" >
+							<tr >
+								<td >Username</td>
+								<td >ovde ide username</td>
+								
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+					
+				</div> <!-- /widget-content -->
+				<hr style="height:7px;border:none;color:#333;background-color:#333;">
+				<div class="widget-header">
+					
+					<h2 >Sacuvane teme</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Ime teme</th>
+								<th>Sadrzaj</th>
+                                <th>Podforum</th>
+								<th>Autor</th>
+								<th width="80px"> </th>
+								
+								
+							</tr>
+						</thead>
+						<tbody id="sacuvaneTeme" >
+							<tr >
+								<td >Username</td>
+								<td>Sadrzaj</td>
+								<td >ovde ide username</td>
+                                <td> Podforum</td>
+								<td> </td>
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+					
+				</div> <!-- /widget-content -->
+            	<hr style="height:7px;border:none;color:#333;background-color:#333;">
+                <div class="widget-header">
+					
+					<h2 >Teme na koje ste glasali</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Ime teme</th>
+								<th>Sadrzaj</th>
+								 <th>Podforum</th>
+                                <th>Upvote[+] / Downvote[-]</th>
+                               
+								<th>Autor</th>
+								
+								
+							</tr>
+						</thead>
+						<tbody id="glasaneTeme" >
+							<tr >
+								<td >Username</td>
+								<td>Sadrzaj</td>
+								<td >ovde ide username</td>
+								<td>ovde ide podforum</td>
+								<td> ovde ide autor</td>
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+					
+				</div> <!-- /widget-content -->
+				<hr style="height:7px;border:none;color:#333;background-color:#333;">
+                <div class="widget-header">
+					
+					<h2 >Sacuvani komentari</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Sadrzaj komentara</th>
+								
+								 <th>Tema kojoj pripada</th>
+								 
+                                
+                               	<th> Logicki obrisan</th>
+								<th>Autor</th>
+								<th width ="80px"> </th>
+								
+								
+							</tr>
+						</thead>
+						<tbody id="sacuvaniKomentari" >
+							<tr >
+								<td >sadrzaj</td>
+								<td>tema</td>
+								
+								<td>obrisan</td>
+								<td> ovde ide autor</td>
+								
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+					
+				</div> <!-- /widget-content -->
+				
+				<hr style="height:7px;border:none;color:#333;background-color:#333;">
+                <div class="widget-header">
+					
+					<h2 >Komentari na koje ste glasali</h2>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr bgcolor="lightgray">
+								<th>Sadrzaj komentara</th>
+								
+								 <th>Tema kojoj pripada</th>
+								 
+                                 <th> Upvote[+] / Downvote[-]  </th>
+                               	<th> Logicki obrisan</th>
+								<th>Autor</th>
+								
+								
+							</tr>
+						</thead>
+						<tbody id="glasaniKomentari" >
+							<tr >
+								<td >sadrzaj</td>
+								<td>tema</td>
+								<td> glas </td>
+								<td>obrisan</td>
+								<td> ovde ide autor</td>
+							</tr>
+                            
+							
+							</tbody>
+						</table>
+					
+				</div> <!-- /widget-content -->
+				
+				
+        </div>
+        
+        
+        
+        
+        
+
+
+
+        
+        
+		<script src="bootstrap/bootstrap.min.js"></script>        
+    </body>
+    
+</html>

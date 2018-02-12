@@ -1,0 +1,92 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+        <title> Forum </title>
+		<script src="jquery.min.js"></script>
+		<script src="JavaScript/preporukaTema.js"></script> 
+        <script src="JavaScript/general.js"></script> 
+		
+		
+        
+    </head>
+    
+    <body>
+       
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="pocetnaStranica.html">Forum</a>
+              
+              <a class="navbar-brand" href="promenaTipaKorisnika.html"> Promena tipa korisnika</a>
+              <a class="navbar-brand" href="korisnickaStranica.html"> My Profile</a>
+              <a class="navbar-brand" href="posaljiPoruku.html"> Send message</a>
+              <a class="navbar-brand" href="pocetnaStranicaUser.html"> Home(user)</a>
+              <a class="navbar-brand" href="sviKorisnici.html"> All users</a>
+              <a class="navbar-brand" href="preporukaTema.html"> Preporuka tema</a>
+            </div>
+            <ul class="nav navbar-nav"> 
+              <li></li>
+              
+              
+              
+            </ul>
+              
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+             </ul>
+          </div>
+        </nav>
+        
+        <h1 id="subForum"> Ime izabranog podforuma </h1>
+        
+        <div class="container-fluid"  >
+            <div class="row">
+                <div class="col-md-12" id="panelZaTemu">
+                    <div class="panel panel-success">
+                      
+                        <div class="panel-heading">
+                            <div class="panel-title pull-left">   
+                                <a href="tema.html"> Naslov teme </a>
+                            </div>
+                            <div class="panel-title pull-right">   
+                                Skor (like - dislike)
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body" id="subForums8Opis">Opis podforuma</div>
+                        <div class="panel-footer"> 
+                            <ul class = "list-inline">
+                                        <li><button><span class="glyphicon glyphicon-arrow-up"></span> Upvote </button></li>
+                                        <li><button><span class="glyphicon glyphicon-arrow-down fa-lg "></span>Downvote </button></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-pencil" onclick="otvoriKomentareZaTemu()"></span> 
+                                        Komentari
+                                        </a></li>
+                                        <li><small>[Datum Kreiranja]</small></li>
+                                    </ul>      
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href = "#" onclick="kreirajTemuPage()"> <span class="glyphicon glyphicon-plus"></span> Add theme  </a>
+        
+       
+        
+        
+        
+
+
+
+        
+        
+		<script src="bootstrap/bootstrap.min.js"></script>        
+    </body>
+    
+</html>
